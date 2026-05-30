@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Om Prayukti</title>
+  <meta name="description" content="Explore Om Prayukti's full range of IT services — web development, cloud, cybersecurity, consulting, mobile apps, and AI automation." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .service-detail {
+      display: grid; grid-template-columns: auto 1fr; gap: 1.5rem;
+      align-items: start;
+    }
+    .service-num {
+      font-size: 3rem; font-weight: 900;
+      color: #e0f2fe; line-height: 1;
+      user-select: none;
+    }
+    .service-detail h3 { font-size: 1.25rem; font-weight: 700; color: var(--navy); margin-bottom: .5rem; }
+    .service-detail p  { color: var(--gray); margin-bottom: .8rem; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .tag {
+      background: #dbeafe; color: #1e40af;
+      font-size: .78rem; font-weight: 600;
+      padding: .25rem .7rem; border-radius: 999px;
+    }
+    .process-steps {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 1.5rem; counter-reset: step;
+    }
+    .step { text-align: center; padding: 1.8rem 1.2rem; }
+    .step-num {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--blue); color: #fff;
+      font-weight: 800; font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .step h4 { font-weight: 700; color: var(--navy); margin-bottom: .4rem; }
+    .step p  { font-size: .9rem; color: var(--gray); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">Om <span>Prayukti</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <h1>Our Services</h1>
+  <p>Comprehensive IT solutions tailored to your business needs.</p>
+</div>
+
+<!-- SERVICES LIST -->
+<section>
+  <div class="container">
+    <div class="section-label">What We Offer</div>
+    <h2 class="section-title">End-to-End Technology Services</h2>
+    <p class="section-sub">From idea to deployment and beyond — we're with you at every step.</p>
+
+    <div style="display:flex; flex-direction:column; gap:2.5rem; margin-top:1rem;">
+
+      <div class="card">
+        <div class="service-detail">
+          <div class="service-num">01</div>
+          <div>
+            <h3>🌐 Web Development</h3>
+            <p>We build fast, beautiful, and robust websites and web applications — from marketing sites to complex SaaS platforms. Every project is crafted for performance, accessibility, and ease of management.</p>
+            <div class="tag-list">
+              <span class="tag">React / Next.js</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">E-commerce</span>
+              <span class="tag">CMS Integration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="service-detail">
+          <div class="service-num">02</div>
+          <div>
+            <h3>☁️ Cloud Solutions</h3>
+            <p>Plan, migrate, and optimize your cloud infrastructure for reliability and cost-efficiency. We work with all major cloud providers and tailor architectures to your workload.</p>
+            <div class="tag-list">
+              <span class="tag">AWS</span>
+              <span class="tag">Azure</span>
+              <span class="tag">Google Cloud</span>
+              <span class="tag">DevOps / CI-CD</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Cost Optimization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="service-detail">
+          <div class="service-num">03</div>
+          <div>
+            <h3>🔒 Cybersecurity</h3>
+            <p>Protect your business from threats with proactive security measures, audits, and monitoring. We help you stay compliant and resilient in an evolving threat landscape.</p>
+            <div class="tag-list">
+              <span class="tag">Security Audits</span>
+              <span class="tag">Penetration Testing</span>
+              <span class="tag">VAPT</span>
+              <span class="tag">GDPR / ISO 27001</span>
+              <span class="tag">SOC Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="service-detail">
+          <div class="service-num">04</div>
+          <div>
+            <h3>📊 IT Consulting</h3>
+            <p>Strategic technology advisory to help you make the right decisions faster. Whether you're scaling, modernizing, or just starting out — we provide unbiased expert guidance.</p>
+            <div class="tag-list">
+              <span class="tag">Digital Transformation</span>
+              <span class="tag">Tech Stack Advisory</span>
+              <span class="tag">Process Automation</span>
+              <span class="tag">Vendor Selection</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="service-detail">
+          <div class="service-num">05</div>
+          <div>
+            <h3>📱 Mobile App Development</h3>
+            <p>Intuitive, high-performance mobile apps for iOS and Android. We handle the full lifecycle — from UX design and development to App Store submission and maintenance.</p>
+            <div class="tag-list">
+              <span class="tag">React Native</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">iOS (Swift)</span>
+              <span class="tag">Android (Kotlin)</span>
+              <span class="tag">App Store Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="service-detail">
+          <div class="service-num">06</div>
+          <div>
+            <h3>🤖 AI & Automation</h3>
+            <p>Leverage artificial intelligence and robotic process automation to reduce manual effort, surface insights, and create smarter customer experiences.</p>
+            <div class="tag-list">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Chatbots / LLMs</span>
+              <span class="tag">RPA</span>
+              <span class="tag">Data Analytics</span>
+              <span class="tag">API Integrations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OUR PROCESS -->
+<section style="background:#f8fafc;">
+  <div class="container">
+    <div class="section-label">How We Work</div>
+    <h2 class="section-title">Our Proven Process</h2>
+    <p class="section-sub">A clear, collaborative approach that keeps you informed every step of the way.</p>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Discover</h4>
+        <p>We listen first. Understanding your goals, constraints, and context before proposing anything.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Plan</h4>
+        <p>A detailed project plan with milestones, timelines, and clear deliverables — agreed before we start.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Build</h4>
+        <p>Agile sprints with regular check-ins so you can see progress and give feedback in real time.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Launch</h4>
+        <p>Rigorous testing, smooth deployment, and a go-live plan that minimizes risk.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <h4>Support</h4>
+        <p>Post-launch support, monitoring, and continuous improvement so your solution stays healthy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="text-align:center;">
+  <div class="container">
+    <h2 style="font-size:1.8rem; font-weight:700; color:var(--navy); margin-bottom:.8rem;">Not sure which service you need?</h2>
+    <p style="color:var(--gray); max-width:440px; margin:0 auto 2rem;">Tell us about your challenge — we'll point you in the right direction, no strings attached.</p>
+    <a href="contact.html" class="btn btn-primary">Talk to an Expert →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Om <span>Prayukti</span></a>
+      <p>Empowering businesses through intelligent technology solutions. Your vision, our expertise.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Web Development</a></li>
+        <li><a href="services.html">Cloud Solutions</a></li>
+        <li><a href="services.html">Cybersecurity</a></li>
+        <li><a href="services.html">IT Consulting</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Om Prayukti. All rights reserved.</span>
+    <span>Designed with care in India 🇮🇳</span>
+  </div>
+</footer>
+
+</body>
+</html>

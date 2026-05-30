@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Om Prayukti</title>
+  <meta name="description" content="Get in touch with Om Prayukti — we'd love to hear about your project." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .success-msg {
+      display: none;
+      background: #dcfce7; border: 1px solid #86efac;
+      color: #166534; padding: 1rem 1.2rem; border-radius: 8px;
+      font-weight: 600; margin-top: .5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">Om <span>Prayukti</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <h1>Get in Touch</h1>
+  <p>We typically respond within one business day.</p>
+</div>
+
+<!-- CONTACT SECTION -->
+<section>
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <h2>Let's Talk</h2>
+        <p>Whether you have a project brief or just an idea — reach out. We love exploring possibilities with new and existing clients.</p>
+
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div>
+            <strong>Email</strong>
+            <span>info@omprayukti.com</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <strong>Phone</strong>
+            <span>+91 98765 43210</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <strong>Office</strong>
+            <span>Kolkata, West Bengal, India</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div>
+            <strong>Working Hours</strong>
+            <span>Mon – Sat, 9 AM – 6 PM IST</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div>
+        <div class="card" style="padding:2.5rem;">
+          <h3 style="font-size:1.2rem; font-weight:700; color:var(--navy); margin-bottom:1.5rem;">Send Us a Message</h3>
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div>
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Moutushi" required />
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Sen" />
+              </div>
+            </div>
+            <div>
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" />
+            </div>
+            <div>
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">— Select a service —</option>
+                <option>Web Development</option>
+                <option>Cloud Solutions</option>
+                <option>Cybersecurity</option>
+                <option>IT Consulting</option>
+                <option>Mobile App Development</option>
+                <option>AI &amp; Automation</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project or question..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              Send Message →
+            </button>
+            <div class="success-msg" id="successMsg">
+              ✅ Thank you! We'll be in touch within one business day.
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section style="background:#f8fafc; padding:3rem 2rem;">
+  <div class="container" style="text-align:center;">
+    <div style="background:#e2e8f0; border-radius:12px; height:220px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:.5rem; color:var(--gray);">
+      <span style="font-size:2.5rem;">📍</span>
+      <strong>Kolkata, West Bengal, India</strong>
+      <span style="font-size:.9rem;">Add your Google Maps embed here for directions.</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Om <span>Prayukti</span></a>
+      <p>Empowering businesses through intelligent technology solutions. Your vision, our expertise.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Web Development</a></li>
+        <li><a href="services.html">Cloud Solutions</a></li>
+        <li><a href="services.html">Cybersecurity</a></li>
+        <li><a href="services.html">IT Consulting</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Om Prayukti. All rights reserved.</span>
+    <span>Designed with care in India 🇮🇳</span>
+  </div>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  // In production, replace with a form backend (e.g. Netlify Forms, Formspree, EmailJS)
+  document.getElementById('successMsg').style.display = 'block';
+  document.getElementById('contactForm').reset();
+  setTimeout(() => {
+    document.getElementById('successMsg').style.display = 'none';
+  }, 6000);
+}
+</script>
+
+</body>
+</html>
